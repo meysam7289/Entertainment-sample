@@ -1,0 +1,16 @@
+<div #wrapper class="d-flex" id="wrapper">
+    <sidebar-menu ></sidebar-menu>
+    <div id="page-content-wrapper">
+        <div class="row navbar bg-dark">
+            <div class="col-md-1">
+                <a (click)="sidebarToggle(wrapper)" class="btn-toggle"><fa-icon [icon]="faBars"></fa-icon></a>
+            </div>
+            <div class="col-md-1">
+                <a (click)="pinSidebar()" class="btn-toggle" [ngClass]="{'pin-deactive': !pinActive }" [ngClass]="{'pin-active': pinActive }"><fa-icon [icon]="faThumbtack"></fa-icon></a>
+            </div>
+        </div>
+        <div class="container-fluid">
+        <router-outlet></router-outlet> 
+        </div>
+    </div>
+</div>

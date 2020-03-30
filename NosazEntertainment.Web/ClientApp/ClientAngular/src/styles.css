@@ -1,0 +1,116 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ 
+ /* font-Samim */
+ @font-face {
+    font-family: Samim;
+    src: url('/assets/font/samim.eot');
+    src: url('/assets/font/samim.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/samim.woff') format('woff'),
+         url('/assets/font/samim.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  * {
+    font-size: 100%;
+    font-family: Samim, tahoma;
+   }
+ 
+ body {
+    overflow-x: hidden;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-right: -15rem;
+    -webkit-transition: margin .40s ease-out;
+    -moz-transition: margin .40s ease-out;
+    -o-transition: margin .40s ease-out;
+    transition: margin .40s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 13rem;
+    font-size: 13px;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-right: 0;
+  }
+  #sidebar-wrapper .collapsed{
+    margin-right: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-right: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-right: -15rem;
+    }
+  }
+
+  .component-header{
+    margin: 7px;
+    background-color: #1e8186c7;
+    color: aliceblue;
+    box-shadow: 0 0 16px rgba(0,0,0,.28);
+    border-radius: 12px;
+    text-align: center;
+}
+.sidebar-shadow{
+  box-shadow: 0 0 16px rgba(0,0,0,.28);
+}
+.bg-sidebar{
+  background-color: #1e8186c7;
+}
+.list-group-item-action{
+  background-color: #145d61c7;
+}
+.list-group-item-action :hover{
+  background-color: #18cbd4c7 !important;
+}
+.list-group-item-action :focus{
+  background-color: #18cbd4c7 !important;
+}
+.navbar{
+  margin-right: 2px;
+}
+
+.btn-toggle{
+  border: #73c4c8  solid 1px;
+  border-radius: 5px 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #dbfdff !important;
+}
+
+.btn-toggle:hover{
+  color: #b5d0d1 !important;
+}
+
+.pin-active{
+  color: #d3ebecc7 !important; 
+}
+
+.pin-deactive{
+  color: #707070c7 !important;
+}
